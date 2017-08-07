@@ -1,0 +1,111 @@
+@font-face {
+	font-family: Geomanist-Regular;
+	src: url('fonts/Geomanist-Regular.otf');
+}
+
+@font-face {
+	font-family: Geomanist-Bold;
+	src: url('fonts/Geomanist-Bold.otf');
+}
+
+
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output,  section, summary,
+time, mark, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+	font-family: helvetica;
+	font-size: 16px
+	color: #000000;
+	margin: 0;
+}
+
+
+
+
+
+
+
+
+
+.content {
+  overflow:hidden;
+  margin: 20px 20px 20px 40px;
+  display:block;
+}
+
+
+
+.item {
+    width: 30%;
+    float: left;
+    padding: 0 20px 40px 20px;
+}
+
+
+.image {
+  width:100%;
+}
+
+
+.caption {
+   position: absolute;
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:20px;
+    bottom: -100%;
+    top:20;
+    height: 100%;
+    width: 30%;
+    opacity: 0;
+    transition: .5s;
+   }
+
+.item:hover .caption{
+
+    position: absolute;
+    background-color: #ffffff;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top:20px;
+    bottom: 0%;
+    height: 100%;
+    width: 30%;
+    opacity: 100;
+}
+
+.content-box__icon {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 3.25em;
+    height: 3.25em;
+    line-height: 4em;
+    background: #fff;
+    text-align: center;
+    transition: background .3s ease-in-out;
+  }
